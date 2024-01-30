@@ -54,42 +54,46 @@ function DesencriptarTexto() {
     var vocalesEncriptadas = {
         'ai': 'a',
         'enter': 'e',
-        'ober': 'o',
         'imes': 'i',
+        'ober': 'o',
         'ufat': 'u'
-    };
+    }
 
     for (var i = 0; i < palabras.length; i++) {
         var palabraEncriptada = palabras[i];
         var palabraDesencriptada = "";
 
-        for (var x = 0; x < palabraEncriptada.length; x++) {
-            var caracter = palabraEncriptada.charAt(x);
+        for (var j = palabraEncriptada.length - 1; j >= 0; j--) {
+            var letra = palabraEncriptada.charAt(j);
+            var posibleVocalEncriptada = letra;
 
-            var esVocalCambiada = false;
-            for (var vocalEncriptada in vocalesEncriptadas) {
+            // Construir una posible vocal encriptada empezando desde la última letra hacia atrás
+            for (var k = j - 1; k >= 0; k--) {
+                posibleVocalEncriptada = palabraEncriptada.charAt(k) + posibleVocalEncriptada;
 
-                if (vocalesEncriptadas.hasOwnProperty(vocalEncriptada)) {
-                    if (caracter === vocalEncriptada.charAt(0) || caracter === vocalEncriptada.charAt(1)) {
-                        // Si el caracter es una vocal cambiada, reemplazarla por la vocal original
-                        palabraDesencriptada += vocalesEncriptadas[vocalEncriptada];
-                        esVocalCambiada = true;
-                        break;
-                    }
+                if (vocalesEncriptadas.hasOwnProperty(posibleVocalEncriptada)) {
+                    // Si encontramos una coincidencia con una vocal encriptada, reemplazamos y salimos del bucle
+                    palabraDesencriptada = vocalesEncriptadas[posibleVocalEncriptada] + palabraDesencriptada;
+                    j = k; // Actualizamos la posición del bucle externo para evitar volver a procesar la vocal encriptada
+                    break;
                 }
             }
-            if (!esVocalCambiada) {
-                palabraDesencriptada += caracter;
+
+            // Si no se encontró ninguna coincidencia, simplemente agregamos la letra actual a la palabra desencriptada
+            if (k < 0) {
+                palabraDesencriptada = letra + palabraDesencriptada;
             }
         }
 
-        textoDesencriptado += palabraDesencriptada
+        textoDesencriptado += palabraDesencriptada;
 
-
+        // Agregar espacio si no es la última palabra
         if (i < palabras.length - 1) {
             textoDesencriptado += " ";
         }
     }
+
+
 
     console.log(textoDesencriptado);
     var textoResultado = document.getElementById("textoResultado");
