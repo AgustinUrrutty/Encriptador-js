@@ -14,16 +14,24 @@
     </header>
 
     <body>
-        <div>
-            <textarea name="TextoIngresado" id="TextoIngresado" class="Input" cols="30" rows="10"
-                placeholder="Ingese un texto"></textarea>
-            <br>
-            <button class="botonIncriptar" id="botonIncriptar" onclick="IncriptarTexto(), CapturarTexto()"></button>
-            <button class="botonDesencriptar" id="botonDesencriptar" onclick="DesencriptarTexto(), CapturarTexto()" ></button>
-        </div>
-        <div>
-            <p class="textoResultado" id="textoResultado">Acá se va a mostrar el texto Encriptador o Desencriptado  </p>
-        </div>
+        <section class="home">
+            <div class="IngresarTexto">
+                <textarea name="TextoIngresado" id="TextoIngresado" class="Input" cols="30" rows="10"
+                    placeholder="Ingese un texto"></textarea>
+                <br>
+                
+            </div>
+            <div class="botones">
+                <button class="botonEstilos coloraAzulBoton colorSecundarioLetra" id="botonIncriptar"
+                    onclick="IncriptarTexto(), CapturarTexto()">Encriptar</button>
+                <button class="botonEstilos coloraAzulBotonLetraBorde" id="botonDesencriptar"
+                    onclick="DesencriptarTexto(), CapturarTexto()">Desencriptar</button>
+            </div>
+            <div class="resultado">
+                <p class="textoResultado" id="textoResultado">Acá se va a mostrar el texto Encriptador o Desencriptado
+                </p>
+            </div>
+        </section>
     </body>
     <footer>
 

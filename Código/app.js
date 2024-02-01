@@ -4,9 +4,17 @@ function CapturarTexto() {
     console.log(contenido);
 }
 
-function IncriptarTexto() {
-    var TextoIngresado = document.getElementById("TextoIngresado").value;
 
+function filtrarTexto(texto) {
+    // Eliminar caracteres especiales y tildes
+    var textoFiltrado = texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    return textoFiltrado;
+}
+
+function IncriptarTexto() {
+    var TextoIngresadoMayus = document.getElementById("TextoIngresado").value;
+    var textoFiltrado = filtrarTexto(TextoIngresadoMayus.toLowerCase()); 
+    var TextoIngresado = textoFiltrado;
     var textoIncriptado = "";
 
     for (var i = 0; i < TextoIngresado.length; i++) {
@@ -45,10 +53,10 @@ function IncriptarTexto() {
 }
 
 function DesencriptarTexto() {
-    var TextoIngresado = document.getElementById("TextoIngresado").value;
-
+    var TextoIngresadoMayus = document.getElementById("TextoIngresado").value;
+    var textoFiltrado = filtrarTexto(TextoIngresadoMayus.toLowerCase()); 
+    var TextoIngresado = textoFiltrado;
     var textoDesencriptado = "";
-
     var palabras = TextoIngresado.split(" ");
 
     var vocalesEncriptadas = {

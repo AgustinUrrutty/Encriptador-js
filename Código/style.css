@@ -1,3 +1,76 @@
-*{
-background: color(#e9ecf8);
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: color(#e9ecf8);
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.IngresarTexto {
+    width: 577px;
+    /* Ocupa más de la mitad de la página */
+    background-color: red;
+    height: 48px;
+    margin-top: 168px;
+    margin-left: 240px;
+}
+
+.resultado {
+    margin-left: auto;
+    /* Alinea a la derecha */
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 944px;
+    background-color: blue;
+    border-radius: 32px;
+    text-align: center;
+}
+.resultado p {
+    margin-top: 300px;
+    color: white;
+}
+
+.botones {
+    position: absolute;
+    top: 885px;
+    left: 240px;
+    gap: 24px;
+}
+
+.botonEstilos {
+    width: 328px;
+    height: 67px;
+    margin: 10px;
+    border-radius: 24px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 16px;
+    
+    font-weight: 400;
+}
+.coloraAzulBoton{
+   background-color: #0A3871;
+   border: 2px;
+}
+.coloraAzulBotonLetraBorde{
+    color: #0A3871;
+    border: 1px solid #0A3871 ;
+    background-color: #D8DFE8;
+}
+.colorSecundarioLetra{
+    color: #D8DFE8;
 }
