@@ -13,7 +13,7 @@ function filtrarTexto(texto) {
 
 function IncriptarTexto() {
     var TextoIngresadoMayus = document.getElementById("TextoIngresado").value;
-    var textoFiltrado = filtrarTexto(TextoIngresadoMayus.toLowerCase()); 
+    var textoFiltrado = filtrarTexto(TextoIngresadoMayus.toLowerCase());
     var TextoIngresado = textoFiltrado;
     var textoIncriptado = "";
 
@@ -54,7 +54,7 @@ function IncriptarTexto() {
 
 function DesencriptarTexto() {
     var TextoIngresadoMayus = document.getElementById("TextoIngresado").value;
-    var textoFiltrado = filtrarTexto(TextoIngresadoMayus.toLowerCase()); 
+    var textoFiltrado = filtrarTexto(TextoIngresadoMayus.toLowerCase());
     var TextoIngresado = textoFiltrado;
     var textoDesencriptado = "";
     var palabras = TextoIngresado.split(" ");
@@ -88,7 +88,7 @@ function DesencriptarTexto() {
             }
 
             // Si no se encontró ninguna coincidencia, simplemente agregamos la letra actual a la palabra desencriptada
-            if (k < 0) {
+            if (k < 0) 
                 palabraDesencriptada = letra + palabraDesencriptada;
             }
         }
@@ -106,4 +106,3 @@ function DesencriptarTexto() {
     console.log(textoDesencriptado);
     var textoResultado = document.getElementById("textoResultado");
     textoResultado.innerHTML = textoDesencriptado;
-}

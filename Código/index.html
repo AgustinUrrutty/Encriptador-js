@@ -19,7 +19,7 @@
                 <textarea name="TextoIngresado" id="TextoIngresado" class="Input" cols="30" rows="10"
                     placeholder="Ingese un texto"></textarea>
                 <br>
-                
+
             </div>
             <div class="botones">
                 <button class="botonEstilos coloraAzulBoton colorSecundarioLetra" id="botonIncriptar"
@@ -28,8 +28,13 @@
                     onclick="DesencriptarTexto(), CapturarTexto()">Desencriptar</button>
             </div>
             <div class="resultado">
-                <p class="textoResultado" id="textoResultado">Acá se va a mostrar el texto Encriptador o Desencriptado
-                </p>
+                <dir id="textoResultado" class="textoResultado">
+                    <img src="/Encriptador/img/Muñeco.png" alt="" class="Muñeco">
+                    <div class="mensaje">
+                        <p class="Msj1" id="">Ningún mensaje fue encontrado</p>
+                        <p class="Msj2" id="">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </dir>
             </div>
         </section>
     </body>
