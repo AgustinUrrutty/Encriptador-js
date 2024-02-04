@@ -2,46 +2,78 @@
     padding: 0px;
     margin: 0px;
     font-family: sans-serif;
+
 }
 
 body {
-    display: flex;
-    justify-content: space-between;
     background: #E9ECF8;
 }
 
-.home {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
+
+}
+
+.logo {
+    position: relative;
+    left: 40px;
+    top: 40px;
 }
 
 .IngresarTexto {
-    width: 577px;
-    /* Ocupa más de la mitad de la página */
-    background-color: red;
-    height: 48px;
-    margin-top: 168px;
-    margin-left: 240px;
+
+    position: relative;
+    top: 168px;
+    left: 330px;
+
 }
 
-.resultado {
-    margin-left: auto;
-    /* Alinea a la derecha */
-    margin-top: 40px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+.textoarea {
+    width: 680px;
+    height: 288px;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: 400;
+    Line height: 48px;
+    color: #0A3871;
+    border: none;
+    resize: none;
+    background-color: #E9ECF8;
+}
+
+.textoarea::placeholder {
+    color: #0A3871;
+    Line height: 48px;
+}
+
+.seccion1 {
+    background-color: ;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+.seccion2 {
+    position: relative;
+    top: 40px;
+    
+
     width: 400px;
     height: 944px;
+
     background-color: white;
     border-radius: 32px;
     text-align: center;
     box-shadow: 0px 24px 32px -8px #00000014;
+    overflow: auto;
+    grid-column-start: 4;
+    grid-column-end: 4;
 
 }
 
-.mensaje{
+.mensaje {
     text-align: center;
 }
 
@@ -49,62 +81,62 @@ body {
 .Msj1 {
     font-weight: 700;
     font-size: 24px;
-    color: #343A40 ;
+    color: #343A40;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
 }
+
 .Msj2 {
     font-weight: 400;
     font-size: 16px;
-    color: #495057 ;
+    color: #495057;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
 }
+
 .textoResultado {
+
     margin-top: 20px;
     padding-left: 4px;
     padding-right: 4px;
+    text-align: left;
 }
+
 .Muñeco {
     margin-top: 280px;
-    padding-left: 40px;
-    padding-right: 40px;
+
 }
 
 .botones {
-    position: absolute;
-    top: 885px;
-    left: 240px;
-    gap: 24px;
+    position: relative;
+    left: 300PX;
+    top: 532px;
+    width: 680px;
+    margin-bottom: 20px;
 }
 
 .botonEstilos {
     width: 328px;
     height: 67px;
-    margin: 10px;
     border-radius: 24px;
     text-align: center;
-    font-family: inherit;
     font-size: 16px;
-
     font-weight: 400;
 }
 
 .coloraAzulBoton {
     background-color: #0A3871;
-    border: 2px;
+    border: none;
+    color: #D8DFE8;
+    margin-right: 16px;
 }
 
 .coloraAzulBotonLetraBorde {
     color: #0A3871;
     border: 1px solid #0A3871;
     background-color: #D8DFE8;
-}
-
-.colorSecundarioLetra {
-    color: #D8DFE8;
 }

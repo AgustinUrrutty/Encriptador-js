@@ -88,21 +88,20 @@ function DesencriptarTexto() {
             }
 
             // Si no se encontró ninguna coincidencia, simplemente agregamos la letra actual a la palabra desencriptada
-            if (k < 0) 
+            if (k < 0)
                 palabraDesencriptada = letra + palabraDesencriptada;
-            }
-        }
-
-        textoDesencriptado += palabraDesencriptada;
-
-        // Agregar espacio si no es la última palabra
-        if (i < palabras.length - 1) {
-            textoDesencriptado += " ";
         }
     }
 
+    textoDesencriptado += palabraDesencriptada;
 
-
+    // Agregar espacio si no es la última palabra
+    if (i < palabras.length - 1) {
+        textoDesencriptado += " ";
+    }
     console.log(textoDesencriptado);
-    var textoResultado = document.getElementById("textoResultado");
-    textoResultado.innerHTML = textoDesencriptado;
+var textoResultado = document.getElementById("textoResultado");
+textoResultado.innerHTML = textoDesencriptado;
+}
+
+

@@ -9,38 +9,35 @@
 </head>
 
 <body>
-    <header>
 
-    </header>
-
-    <body>
-        <section class="home">
+    <div class="container">
+        <div class="seccion1">
+            <img src="/Encriptador/img/Logo.png" alt="" class="logo">
             <div class="IngresarTexto">
-                <textarea name="TextoIngresado" id="TextoIngresado" class="Input" cols="30" rows="10"
-                    placeholder="Ingese un texto"></textarea>
-                <br>
-
+                <textarea name="" id="TextoIngresado" class="textoarea" cols="30" rows="10"
+                    placeholder="Ingrese el texto aqui"></textarea>
             </div>
             <div class="botones">
+                <p>Solo letras minúsculas y sin acentos</p>
                 <button class="botonEstilos coloraAzulBoton colorSecundarioLetra" id="botonIncriptar"
                     onclick="IncriptarTexto(), CapturarTexto()">Encriptar</button>
                 <button class="botonEstilos coloraAzulBotonLetraBorde" id="botonDesencriptar"
                     onclick="DesencriptarTexto(), CapturarTexto()">Desencriptar</button>
             </div>
-            <div class="resultado">
-                <dir id="textoResultado" class="textoResultado">
-                    <img src="/Encriptador/img/Muñeco.png" alt="" class="Muñeco">
-                    <div class="mensaje">
-                        <p class="Msj1" id="">Ningún mensaje fue encontrado</p>
-                        <p class="Msj2" id="">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    </div>
-                </dir>
+        </div>
+        <div class="seccion2">
+            <div id="textoResultado" class="textoResultado">
+                <img src="/Encriptador/img/Muñeco.png" alt="" class="Muñeco">
+                <div class="mensaje">
+                    <p class="Msj1" id="">Ningún mensaje fue encontrado</p>
+                    <p class="Msj2" id="">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
             </div>
-        </section>
-    </body>
-    <footer>
-
-    </footer>
+            <button class="botonEstilos coloraAzulBoton colorSecundarioLetra" id=""
+            onclick="">Encriptar</button>
+        </div>
+    </div>
+    
     <script src="app.js"></script>
 </body>
 
