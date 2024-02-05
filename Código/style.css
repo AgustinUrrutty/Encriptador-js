@@ -41,7 +41,7 @@ body {
     padding: 10px;
     font-size: 32px;
     font-weight: 400;
-    Line height: 48px;
+    line-height: 48px;
     color: #0A3871;
     border: none;
     resize: none;
@@ -50,7 +50,7 @@ body {
 
 .textoarea::placeholder {
     color: #0A3871;
-    Line height: 48px;
+    line-height: 48px;
 }
 
 
@@ -185,4 +185,38 @@ body {
     /* Distancia desde la parte inferior */
     left: 38px;
     /* Distancia desde la derecha */
+}
+
+@media screen and (max-width: 800px) {
+
+    /* Muñeco oculto en pantallas pequeñas */
+    .Muñeco {
+        display: none;
+    }
+    /* Botones ajustados para pantallas pequeñas */
+    .botones {
+        position: relative;
+        top: 524px; 
+        left: 40px; 
+    }
+    .seccion2 {
+        position: relative;
+        top: 538px;
+        left: 40px;
+
+        width: 688px;
+        height: 133px;
+
+        border-radius: 32px;
+        margin-top: 40px;
+    }
+    .mensaje {
+        text-align: center;
+    }
+    .IngresarTexto{
+        position: relative;
+        top: 240px; 
+        left: 40px; 
+
+    }
 }
