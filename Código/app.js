@@ -50,6 +50,10 @@ function IncriptarTexto() {
     var textoResultado = document.getElementById("textoResultado")
     textoResultado.innerHTML = textoIncriptado
 
+    // Mostrar el botón de copiar texto
+    var botonCopiar = document.getElementById("boton-copiar");
+    botonCopiar.style.display = "block";
+
 }
 
 function DesencriptarTexto() {
@@ -100,8 +104,35 @@ function DesencriptarTexto() {
         textoDesencriptado += " ";
     }
     console.log(textoDesencriptado);
-var textoResultado = document.getElementById("textoResultado");
-textoResultado.innerHTML = textoDesencriptado;
+    var textoResultado = document.getElementById("textoResultado");
+    textoResultado.innerHTML = textoDesencriptado;
+
+    // Mostrar el botón de copiar texto
+    var botonCopiar = document.getElementById("boton-copiar");
+    botonCopiar.style.display = "block";
 }
 
+function CopiarTexto() {
+    document.getElementById('boton-copiar').addEventListener('click', function () {
+        // Selecciona el contenido del div
+        var contenido = document.getElementById('textoResultado');
+        var seleccion = window.getSelection();
+        var rango = document.createRange();
+        rango.selectNodeContents(contenido);
+        seleccion.removeAllRanges();
+        seleccion.addRange(rango);
 
+        // Intenta copiar el contenido seleccionado al portapapeles
+        try {
+            document.execCommand('copy');
+            alert('¡Texto copiado al portapapeles!');
+        } catch (error) {
+            console.error('No se pudo copiar el texto: ', error);
+        }
+
+        // Limpia la selección
+        seleccion.removeAllRanges();
+    });
+}
+document.getElementById("botonDesencriptar").addEventListener("click", IncriptarTexto );
+document.getElementById("botonDesencriptar").addEventListener("click", DesencriptarTexto );

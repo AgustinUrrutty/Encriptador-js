@@ -49,7 +49,7 @@ body {
 }
 
 .seccion1 {
-    background-color: ;
+    
     grid-column-start: 1;
     grid-column-end: 4;
 
@@ -113,8 +113,8 @@ body {
 
 .botones {
     position: relative;
-    left: 300PX;
-    top: 532px;
+    left: 240px;
+    top: 885px;
     width: 680px;
     margin-bottom: 20px;
 }
@@ -139,4 +139,14 @@ body {
     color: #0A3871;
     border: 1px solid #0A3871;
     background-color: #D8DFE8;
+}
+
+#boton-copiar{
+    display: none ;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    background-color: white;
+    position: relative; /* Posición fija */
+    top: 800px; /* Distancia desde la parte inferior */
+    left: 30px; /* Distancia desde la derecha */
 }
