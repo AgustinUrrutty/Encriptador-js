@@ -9,22 +9,22 @@
 </head>
 
 <body>
-
     <div class="container">
-        <div class="seccion1">
-            <img src="/Encriptador/img/Logo.png" alt="" class="logo">
-            <div class="IngresarTexto">
-                <textarea name="" id="TextoIngresado" class="textoarea" cols="30" rows="10"
-                    placeholder="Ingrese el texto aqui"></textarea>
-            </div>
-            <div class="botones">
-                <p>Solo letras minúsculas y sin acentos</p>
-                <button class="botonEstilos coloraAzulBoton colorSecundarioLetra" id="botonIncriptar"
-                    onclick="IncriptarTexto(), CapturarTexto()">Encriptar</button>
-                <button class="botonEstilos coloraAzulBotonLetraBorde" id="botonDesencriptar"
-                    onclick="DesencriptarTexto(), CapturarTexto()">Desencriptar</button>
-            </div>
+
+        <img src="/Encriptador/img/Logo.png" alt="" class="logo">
+        <div class="IngresarTexto">
+            <textarea name="" id="TextoIngresado" class="textoarea" cols="30" rows="10"
+                placeholder="Ingrese el texto aqui"></textarea>
         </div>
+        <div class="botones">
+
+            <p class="msjAdvertencia"><img src="/Encriptador/img/Group.png" class="logoAdvertencia" alt=""> Solo letras minúsculas y sin acentos</p>
+            <button class="botonEstilos coloraAzulBoton colorSecundarioLetra" id="botonIncriptar"
+                onclick="IncriptarTexto(), CapturarTexto()">Encriptar</button>
+            <button class="botonEstilos coloraAzulBotonLetraBorde" id="botonDesencriptar"
+                onclick="DesencriptarTexto(), CapturarTexto()">Desencriptar</button>
+        </div>
+
         <div class="seccion2">
             <div id="textoResultado" class="textoResultado">
                 <img src="/Encriptador/img/Muñeco.png" alt="" class="Muñeco">
@@ -33,11 +33,12 @@
                     <p class="Msj2" id="">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
             </div>
-            <button class="botonEstilos botoncopiar" id="boton-copiar"
-            onclick="CopiarTexto()">Copiar</button>
+            <div>
+                <button class="botonEstilos botoncopiar" id="boton-copiar" onclick="CopiarTexto()">Copiar</button>
+            </div>
         </div>
     </div>
-    
+
     <script src="app.js"></script>
 </body>
 

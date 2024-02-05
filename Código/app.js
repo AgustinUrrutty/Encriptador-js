@@ -95,13 +95,14 @@ function DesencriptarTexto() {
             if (k < 0)
                 palabraDesencriptada = letra + palabraDesencriptada;
         }
+        // Agregar espacio si no es la última palabra
+    if (i < palabras.length - 1) {
+        textoDesencriptado += " ";
     }
 
     textoDesencriptado += palabraDesencriptada;
 
-    // Agregar espacio si no es la última palabra
-    if (i < palabras.length - 1) {
-        textoDesencriptado += " ";
+    
     }
     console.log(textoDesencriptado);
     var textoResultado = document.getElementById("textoResultado");
