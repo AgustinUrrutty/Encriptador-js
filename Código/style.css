@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: #E9ECF8;
+    background: #F3F5FC;
 }
 
 .container {
@@ -45,7 +45,7 @@ body {
     color: #0A3871;
     border: none;
     resize: none;
-    background-color: #E9ECF8;
+    background-color: #F3F5FC;
 }
 
 .textoarea::placeholder {
@@ -193,30 +193,98 @@ body {
     .Muñeco {
         display: none;
     }
+
     /* Botones ajustados para pantallas pequeñas */
     .botones {
         position: relative;
-        top: 524px; 
-        left: 40px; 
+        top: 524px;
+        left: 40px;
     }
+
     .seccion2 {
         position: relative;
         top: 538px;
         left: 40px;
 
         width: 688px;
-        height: 133px;
+        height: 343px;
 
         border-radius: 32px;
         margin-top: 40px;
+        padding: 32px;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
     }
-    .mensaje {
-        text-align: center;
-    }
-    .IngresarTexto{
+
+    .IngresarTexto {
         position: relative;
-        top: 240px; 
-        left: 40px; 
+        top: 240px;
+        left: 40px;
 
     }
+
+    .mensaje {
+        text-align: center;
+
+        width: 624px;
+        height: 69px;
+
+    }
+
+    .Msj1 {
+        font-weight: 700;
+        font-size: 24px;
+        color: #343A40;
+        padding: 0px;
+        width: auto;
+    }
+
+    .Msj2 {
+        font-weight: 400;
+        font-size: 16px;
+        color: #495057;
+        width: auto;
+        padding: 0px;
+
+    }
+
+    .textoResultado {
+        position: relative;
+
+        overflow: auto;
+        height: 180px;
+        width: 624px;
+
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-left: 4px;
+        padding-right: 4px;
+
+        left: 28px;
+
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        color: #495057;
+
+    }
+
+    #boton-copiar {
+
+        color: #0A3871;
+        border: 1px solid #0A3871;
+        background-color: white;
+        width: 624px;
+        position: relative;
+        top: 25px;
+        left: 38px;
+    }
+
 }
