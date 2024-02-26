@@ -56,7 +56,7 @@ body {
 
 .seccion2 {
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 1450px;
 
     width: 400px;
@@ -197,17 +197,18 @@ body {
     /* Botones ajustados para pantallas pequeñas */
     .botones {
         position: relative;
-        top: 524px;
+        top: 385px;
         left: 40px;
     }
 
     .seccion2 {
         position: relative;
-        top: 538px;
-        left: 40px;
+        top: 415px;
+        left: 10px;
 
         width: 688px;
-        height: 343px;
+        height: auto;
+        max-height: 350px;
 
         border-radius: 32px;
         margin-top: 40px;
@@ -256,8 +257,9 @@ body {
         position: relative;
 
         overflow: auto;
-        height: 180px;
+        height: auto;
         width: 624px;
+        max-height: 180px;
 
         margin-top: 20px;
         margin-bottom: 30px;
@@ -285,6 +287,7 @@ body {
         position: relative;
         top: 25px;
         left: 38px;
+        margin-bottom: 15px;
         
     }
 
