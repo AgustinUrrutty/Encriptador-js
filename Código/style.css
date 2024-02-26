@@ -288,7 +288,155 @@ body {
         top: 25px;
         left: 38px;
         margin-bottom: 15px;
-        
+
     }
 
+}
+
+@media screen and (max-width: 400px) {
+
+    /* Muñeco oculto en pantallas pequeñas */
+    .Muñeco {
+        display: none;
+    }
+
+    .IngresarTexto {
+
+        position: relative;
+        top: 152px;
+        left: 16px;
+        width: 100px;
+        max-height: 624px;
+
+
+    }
+
+    .textoarea {
+        width: 330px;
+        height: 100px;
+        max-height: 624px;
+        padding: 10px;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 48px;
+        color: #0A3871;
+        border: none;
+        resize: none;
+        background-color: #F3F5FC;
+    }
+
+
+
+    /* Botones ajustados para pantallas pequeñas */
+    .botones {
+        position: relative;
+        top: 485px;
+        left: 16px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+        /* Cambiamos la dirección de los elementos */
+        flex-wrap: wrap;
+    }
+
+    .botonEstilos {
+        width: 328px;
+        height: 67px;
+        border-radius: 24px;
+        text-align: center;
+        font-size: 16px;
+        ddddddd font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .seccion2 {
+        position: relative;
+        top: 707px;
+        left: 24px;
+
+        width: 327px;
+        height: 186px;
+        max-height: 595px;
+
+        border-radius: 32px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        ;
+        padding: 32px;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+
+        box-sizing: border-box;
+        /* Incluimos el padding y los bordes en el tamaño total */
+        border: 1px solid red;
+    }
+
+    .textoResultado {
+        position: relative;
+
+        overflow: auto;
+        height: auto;
+        width: 343px;
+        max-height: 432px;
+
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-left: 4px;
+        padding-right: 4px;
+
+        left: 15px;
+
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        color: #495057;
+
+    }
+
+    .mensaje {
+        text-align: center;
+
+        width: 200px;
+        height: auto;
+        margin-bottom: 100px;
+
+    }
+
+    .Msj1 {
+        font-weight: 700;
+        font-size: 24px;
+        color: #343A40;
+        padding: 0px;
+        width: auto;
+    }
+
+    .Msj2 {
+        font-weight: 400;
+        font-size: 16px;
+        color: #495057;
+        width: auto;
+        padding: 0px;
+
+    }
+
+    #boton-copiar {
+
+        color: #0A3871;
+        border: 1px solid #0A3871;
+        background-color: white;
+        width: 279px;
+        position: relative;
+        top: 25px;
+        left: 5px;
+        margin-bottom: 15px;
+
+    }
 }
