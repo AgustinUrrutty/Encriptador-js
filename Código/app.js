@@ -1,8 +1,4 @@
-function CapturarTexto() {
-    var texto = document.getElementById("TextoIngresado");
-    var contenido = texto.value;
-    console.log(contenido);
-}
+
 
 
 function filtrarTexto(texto) {
@@ -22,7 +18,7 @@ function IncriptarTexto() {
 
         switch (caracter.toLowerCase()) {
             case 'a':
-                textoIncriptado += "ai"
+                textoIncriptado += "ai" 
                 break;
 
             case 'e':
@@ -112,6 +108,7 @@ function DesencriptarTexto() {
     var botonCopiar = document.getElementById("boton-copiar");
     botonCopiar.style.display = "block";
 }
+
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('boton-copiar').addEventListener('click', CopiarTexto);
 });
@@ -135,7 +132,7 @@ function CopiarTexto() {
 
         // Limpia la selección
         seleccion.removeAllRanges();
-    });
+    };
 
 }
 document.getElementById("botonDesencriptar").addEventListener("click", IncriptarTexto);
