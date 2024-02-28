@@ -96,13 +96,13 @@ function DesencriptarTexto() {
                 palabraDesencriptada = letra + palabraDesencriptada;
         }
         // Agregar espacio si no es la última palabra
-    if (i < palabras.length - 1) {
-        textoDesencriptado += " ";
-    }
+        if (i < palabras.length - 1) {
+            textoDesencriptado += " ";
+        }
 
-    textoDesencriptado += palabraDesencriptada;
+        textoDesencriptado += palabraDesencriptada;
 
-    
+
     }
     console.log(textoDesencriptado);
     var textoResultado = document.getElementById("textoResultado");
@@ -112,9 +112,11 @@ function DesencriptarTexto() {
     var botonCopiar = document.getElementById("boton-copiar");
     botonCopiar.style.display = "block";
 }
-
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('boton-copiar').addEventListener('click', CopiarTexto);
+});
 function CopiarTexto() {
-    document.getElementById('boton-copiar').addEventListener('click', function () {
+    {
         // Selecciona el contenido del div
         var contenido = document.getElementById('textoResultado');
         var seleccion = window.getSelection();
@@ -134,6 +136,7 @@ function CopiarTexto() {
         // Limpia la selección
         seleccion.removeAllRanges();
     });
+
 }
-document.getElementById("botonDesencriptar").addEventListener("click", IncriptarTexto );
-document.getElementById("botonDesencriptar").addEventListener("click", DesencriptarTexto );
+document.getElementById("botonDesencriptar").addEventListener("click", IncriptarTexto);
+document.getElementById("botonDesencriptar").addEventListener("click", DesencriptarTexto);

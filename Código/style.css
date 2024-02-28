@@ -305,15 +305,14 @@ body {
         position: relative;
         top: 152px;
         left: 16px;
-        width: 100px;
-        max-height: 624px;
+        width: 200px ;
 
 
     }
 
     .textoarea {
-        width: 330px;
-        height: 100px;
+        width: 290px;
+        height: auto;
         max-height: 624px;
         padding: 10px;
         font-size: 32px;
@@ -352,16 +351,16 @@ body {
     .seccion2 {
         position: relative;
         top: 707px;
-        left: 24px;
+        left: 18px;
 
         width: 327px;
-        height: 186px;
-        max-height: 595px;
+        height: auto;
+        max-height: 620px;
 
         border-radius: 32px;
         margin-top: 40px;
         margin-bottom: 40px;
-        ;
+        
         padding: 32px;
 
         display: flex;
@@ -373,7 +372,7 @@ body {
 
         box-sizing: border-box;
         /* Incluimos el padding y los bordes en el tamaño total */
-        border: 1px solid red;
+        
     }
 
     .textoResultado {
@@ -381,7 +380,7 @@ body {
 
         overflow: auto;
         height: auto;
-        width: 343px;
+        width: auto;
         max-height: 432px;
 
         margin-top: 20px;
@@ -406,7 +405,8 @@ body {
 
         width: 200px;
         height: auto;
-        margin-bottom: 100px;
+        position: relative;
+        right: 4px;
 
     }
 
